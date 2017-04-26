@@ -52,9 +52,9 @@ The navigation bar appears at the top of the page at all times. When scrolling d
 
 * User name and image along with a dropdown caret. Clicking produces options:
     
-    *My Profile. Clicking this link takes the user to their profile page.
-    *Support. Clicking this link takes the user to the support page: https://osf.io/support/
-    *Settings. Clicking this link takes the user to their user settings page. 
-    *Log out. Clicking this link logs the user out of their OSF accounts and takes them to the OSF homepage, where a confirmation message will appear at the top of the page informing them that they have logged out succesfully. URL is osf.io/goodbye.
+    * My Profile. Clicking this link takes the user to their profile page.
+    * Support. Clicking this link takes the user to the support page: https://osf.io/support/
+    * Settings. Clicking this link takes the user to their user settings page. 
+    * Log out. Clicking this link logs the user out of their OSF accounts and takes them to the OSF homepage, where a confirmation message will appear at the top of the page informing them that they have logged out succesfully. URL is osf.io/goodbye.
 
 **Purpose**

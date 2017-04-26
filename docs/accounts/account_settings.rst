@@ -1,8 +1,7 @@
 **Purpose:** A user’s account settings allow them to configure their login and password information, as well as close out
 their OSF account.
 
-Account Settings can be accessed by clicking on the gear button on the top right hand of the navigation bar when logged in.
-In the left hand navigation that appears, the user clicks on “Account Settings” to find the appropriate page.
+A user can access their account "Settings" page by clicking their name on the far right of the navigation bar. In the drop-down menu that unfolds, the user clicks **Settings** (with the gear icon to the left of it) and is taken to their account "Settings" page.
 
 Merging Accounts (Connected Emails)
 --------------------
@@ -283,37 +282,93 @@ There is no limit to the number of times a user can reset their password.
 
 When attempting to :ref:`log in <login>` from the :ref:`navigation bar <navigation-bar>` or the login page, users
 can click on the “Forgot Password?” link. This link directs user to https://osf.io/forgotpassword/. The page is titled
-“Password Reset Request” and there is a field for the user to enter their email address into. A “Reset Password” button
-allows the user to submit the form. A link that reads “Back to OSF” links the user to the OSF homepage.
+“Password reset request” and there is a field with intructions that read "Enter your email address" into which the user can enter their email address. The user either click the **Reset password** button
+or press **enter** on their keyboard to submit the request. A link that reads “Back to OSF” links the user to the OSF homepage.
 
-If a user tries to reset a password for an unregistered email, a yellow dismissable alert is shown on the page. The user is told::
+After the user submits the request, the page will refresh and the user will remain on the "Password reset request" page. A green dismissable alert appears at the top of the page::
+  
+  If there is an OSF account associated with [email], an email with instructions on how to reset the OSF password has been sent to [email]. If you do
+  not receive an email and believe you should have, please contact OSF Support.
+  
+**Use case: entering an unregistered email**
+If a user tries to reset a password for an unregistered email, no email is sent.
 
-    An email with instructions on how to reset the password for the account associated with [email] has been sent. If you do
-    not receive an email and believe you should have please contact OSF Support.
 
-No email is sent.
-
+**Use case: entering a deactivated email**
 If the user tries to reset a password for a deactivated email, a yellow dismissable alert is shown on the page. The user is told::
 
     An email with instructions on how to reset the password for the account associated with [email] has been sent. If you do
     not receive an email and believe you should have please contact OSF Support.
 
-The user receives an email. They are brought to the reset page. Submitting a new password brings them to a page that says in red::
+The user receives an email. They are brought to the reset page. Submitting a new password brings them to a page that says in reads::
 
     This account has been disabled. Please contact support@osf.io to regain access.
 
-If a user tries to reset a password for a registered email, a yellow dismissable alert is shown on the page. The user is told::
+**Use case: resetting a password for an unconfirmed user**
 
-    An email with instructions on how to reset the password for the account associated with [email] has been sent. If you do
-    not receive an email and believe you should have please contact OSF Support.
+If the user has signed up for an OSF account but has not clicked the link in their account confirmation email to confirm their account, they will be unable to reset their OSF password.
 
-The page refreshes and shows a sign in form that has a field for the user’s email address and password, as well as the same
-“Forgot Your Password?” link. The user receives an email that reads::
+After the user sends a password request, they will receive the following email to reset their password::
+  
+    Follow this link to reset your password
+    [URL]
+  
+When the user clicks the link in the email, they are brought to the "Reset Password" page. The user is given two fields to enter their new password
+password and to verify it. A “Reset Password” button allows them to submit the form.
+
+After the user clicks **Reset Password**, they are taken to the following page::
+  
+    Open Science Framework
+    Sign in with your OSF Account to continue
+    Account Not Confirmed
+    This login emila has been registed but not
+    confirmed. Click here [links to https://osf.io/resend/] to resend your confirmation email.
+    [Sign in][Back to OSF]
+    [Create Account]
+    
+When the user clicks **Click here**, they are taken to the "Resend Confirmation Email" page where they can provide the email address they used to create their OSF account to resend themselves an account confirmation email::
+  
+  Resend Confirmation Email
+  Enter your email address and we'll resend your confirmation link.
+  [Email address field]
+  [Send]
+  
+See 
+
+
+
+
+
+
+
+
+
+
+
+If the user clicks the link in the email a second time, they will be taken to the following page::
+  
+    Invalid Request.
+    The requested URL is invalid, has expired, or was already used
+
+
+
+
+
+
+
+
+**The user has a valid OSF account**
+If the user tries to reset a password for a registered email, they receive an email that reads::
 
     Follow this link to reset your password
-    URL
+    [link]
 
-The link leads the user to a page on the OSF titled “Reset Password.” The user is given two fields to enter their desired
+If the user does not click the link in the email within 15 minutes of receiving it, the link expires. If the user clicks the link, they are taken to the following page::
+  
+  Invalid Request.
+  The requested URL is invalid, has expired, or was already used
+
+The link leads the user to a page on the OSF titled “Reset Password.” The user is given two fields to enter their new password
 password and to verify that password. A “Reset Password” button allows them to submit the form.
 
 Clicking “Reset Password” without entering anything into either field refreshes the page; a yellow, dismissable alert

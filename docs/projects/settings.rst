@@ -53,11 +53,11 @@ When the admin selects a new category and clicks **Save Changes**, the following
 
   Successfully updated project settings.
 
-Leaving the page without cancelling or clicking "Save Changes" produces a warning for the user::
+Leaving the page without cancelling or clicking "Save Changes" produces a browser warning::
 
-  ???????????????????????  "Confirm Navigation. There are unsaved changes in your project settings. Are you sure you want to leave this page? [Stay on this page][Leave this page]"
-
-.. _todo: log above as enhancement
+  Confirm Navigation.
+  There are unsaved changes in your project settings. Are you sure you want to leave this page?
+  [Stay on this page][Leave this page]
 
 For admins and read+write contributors on a project or component, the user can edit the title and description in the "Project" or "Component" section.
 
@@ -65,9 +65,9 @@ When the user makes changes to the title and/or description and clicks **Save Ch
 
   Successfully updated project settings.
 
-Leaving the page without cancelling or clicking "Save Changes" produces a warning for the user::
+Leaving the page without cancelling or clicking "Save Changes" produces a browser warning::
 
-  ???????????????????????    Confirm Navigation. There are unsaved changes in your project settings. Are you sure you want to leave this page? [Stay on this page][Leave this page]
+  Confirm Navigation. There are unsaved changes in your project settings. Are you sure you want to leave this page? [Stay on this page][Leave this page]
 
 
 Only admins can delete a project or a component. When the admin clicks the **Delete project** or **Delete component** button, the following modal appears::
@@ -84,8 +84,6 @@ This field is case sensitive.
 After the admin types the confirmation word into the textbox and clicks **Delete**, the project or component will be deleted. If the admin deleted a component, then they will return to the "Project Overview" page. If the admin deleted a project, then they will return to their :ref:`dashboard <dashboard>`. The following green dismissable confirmation message will appear in the top left of either page::
   
    Project/Component has been successfully deleted.
-
-.. _todo: log that users should be alerted that it's case sensitive.
 
 If the admin types the wrong word into the textbox, a red, dismissable alert appears in the top right of the page::
 
@@ -177,7 +175,7 @@ Then the "Settings" page refreshes and the confirmation message disappears.
 Leaving the page without clicking **Save** does not produce a warning for the user.
 
 Project Affiliation / Branding
-------------
+------------------------------
 **Purpose:** Users can affiliate projects with institutions that have created OSF for Institutions accounts.
 
 At the top of the "Project Affiliation / Branding" section, there is text that reads::
@@ -187,7 +185,6 @@ At the top of the "Project Affiliation / Branding" section, there is text that r
     * public projects to be discoverable on specific institutional landing pages 
     * single sign-on to the OSF with institutional credentials
     * FAQ [links to the help guides]
-    ???????????????????????????? should link to OSF for institution help article or set of guides
     
 Underneath the text reads::
 
