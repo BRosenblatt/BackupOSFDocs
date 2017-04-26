@@ -1,4 +1,8 @@
-**Purpose:** OSF Registries allows users to search for public registrations.
+**Purpose:** The registries search is an OSF search, linked to from the "Browse" drop-down menu, that allows the user to browse all public registrations on the OSF.
+
+These results do not include retracted registrations.
+
+This page is accessible at https://osf.io/registries.
 
 OSF Registries is powered by SHARE. On the OSF Registries landing page, the user can search for registrations by typing a query into the search box or by clicking a registration in the "Browse Recent Registrations section."
 

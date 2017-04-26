@@ -21,7 +21,6 @@ Google Drive: https://github.com/CenterForOpenScience/osf.io/issues/3748
 Mendeley: https://github.com/CenterForOpenScience/osf.io/pull/3900
 
 
-
 Users with administrative and read+write privileges can connect and configure storage add-ons from their :ref:`Settings page <settings>`.
 To do this from the main project page, users can click the “Settings” button in the grey navigation bar. For users
 with read only privileges, the “Settings” button will be visible, but options to connect and configure add-ons will
@@ -1565,7 +1564,7 @@ From a project's :ref:`overview page <overview>`, Zotero content can be viewed i
 titled "Zotero."
 
 At the top of the panel is a dropdown with placeholder text::
-    Citation STyle (e.g."APA")
+    Citation Style (e.g."APA")
 
 Below this are the citations that the user who connected the add-on has stored in the linked folder. Citations are listed in a table.
 Below the "Citation" column is the citation for each resource, formatted according to the style selected in the dropdown.

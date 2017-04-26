@@ -4,6 +4,7 @@
 
 The sign-up form can be accessed only while logged out, from the OSF homepage (osf.io). This form requests the user’s full name, contact email, confirmation of their contact email, and a password. After successfully submitting, the user cannot click into any of the fields.
 
+**Use cases**
 If the user does not complete a field, but clicks into a subsequent field or returns to a previous field or submits the form, an alert below the field(s) reads::
 
     This field is required.
@@ -34,46 +35,36 @@ If the user enters a password that is longer than 256 characters, but submits th
 
 Clicking “Sign up free” while any error alert is still showing produces no result.
 
-
-If the user tries to sign-up with an unregistered email, an inline success alert is shown on the page. The user is told::
-
-    Registration successful. Please check [email] to confirm your email address.
-
-
-If the user tries to sign-up with a registered but unconfirmed email, an inline success alert is shown on the page. The user is told::
-
-    Registration successful. Please check [email] to confirm your email address.
-
-The user receives an email::
-
-    Hello [User Name],
-    Please confirm your email address by visiting this link:
-    URL
-    From the Open Science Framework Robot
-
-If the user tries to sign-up with an email that had been listed as an" :doc:`alternate </account_settings>` but that was removed, an inline success alert is shown on the page. The user is told::
-
-    Registration successful. Please check [email] to confirm your email address.
-
-The user receives an email::
-
-    Hello [User Name],
-    Please confirm your email address by visiting this link:
-    URL
-    From the Open Science Framework Robot
-
-If the user tries to sign-up with a registered email, an inline red alert is shown on the page. The user is told::
+If the user tries to sign-up with a registered email, the following temporary inline red alert appears::
 
     The email [email] has already been registered
 
-No email is sent.
+The alert disappears after several seconds. No email is sent.
 
-If the user tries to sign-up with a :doc:`deactivated </account_settings>` account's email, an inline red alert is shown on the page. The user is told::
+If the user tries to sign up with a :ref:`deactivated account's email </account-settings>`, the following inline red alert appears::
 
     The email [email] has already been registered
 
-No email is sent.
+The alert disappears after several seconds. No email is sent.
 
+**The user signs up correctly**
+If the user signs up with a valid email address (including a previous alternate email that was removed or a registered but unconfirmed email), they receive a confirmation message::
+
+  Registration successful. Please check [email] to confirm your email address.
+
+The user receives the following email::
+  
+  Hello [User Name],
+  Thank you for registering for an account on the Open Science Framework.
+  Please verify your email address by visiting this link:
+  [URL]
+  The OSF Team
+  Center for Open Science
+
+The confirmation link in the email lasts for 24 hours before it expires
+
+When the user clicks the link in the email to confirm their OSF account, they are logged in to their OSF account and taken directly to their :ref:`my-dashboard`.
+  
 Confirming an Unregistered User Account
 ---------------
 
