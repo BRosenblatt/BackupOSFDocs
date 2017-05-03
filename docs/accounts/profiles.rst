@@ -255,8 +255,11 @@ ImpactStory
 ^^^^^^^^^^^
 **Purpose:** ImpactStory usernames can be provided to link users and visitors to a user's ImpactStory profile, listing their publications and other work.
 
-To update the "ImpactStory" field, the user clicks into the field and enters their ImpactStory username. If the user enters special
-characters, the settings can still be updated.
+To update the "ImpactStory" field, the user clicks into the field and enters their ImpactStory username. The format for an ImpactStory username is as followers::
+  
+    impactstory.org/u/USERNAME
+
+If the user enters special characters, the settings can still be updated.
 
 .. todo:: log the above as a bug (also spaces are allowed)
 
